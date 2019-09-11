@@ -38,7 +38,6 @@ public class Venda {
 	@NotNull
 	private BigDecimal frete;
 
-	@NotNull
 	private BigDecimal total;
 
 	public Long getId() {

@@ -5,6 +5,7 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,6 +16,7 @@ import com.br.vendas.model.Venda;
 import com.br.vendas.repository.Vendas;
 import com.br.vendas.service.VendaService;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/vendas")
 public class VendasResource {
